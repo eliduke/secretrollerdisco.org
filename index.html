@@ -36,27 +36,12 @@
 
     a { color: #FF69B4 }
     a:hover { color: #cc5490 }
-
-    img.by-line {
-      margin: 60px 0;
-    }
-
-    img.lips-logo {
-      margin: 60px 0 40px 0;
-    }
-
-    img.paypal {
-      width: 75%;
-      display: table;
-      margin: 0 auto;
-    }
-
-    p.subtext {
-      margin-bottom: 70px;
-    }
+    .section { margin: 60px 0 }
+    img.social { width: 50px }
+    li + li { margin-left: 30px }
 
     p.theme {
-      margin-top: 10px;
+      margin: 10px 0 60px 0;
       font-size: 18px;
       font-weight: bold;
     }
@@ -73,41 +58,60 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <img src="images/flyer-2022-08-11.png" class="img-responsive" alt="Flyer for Secret Roller Disco. Thursday, August 11th, 7 to 9pm. Rigler Elementary School. 5401 NE Prescott St. No Skate Rentals. All wheels welcome.">
-
         <p class="theme">This week's theme: PIRATE!</p>
 
-        <img src="images/by-line.png" class="img-responsive by-line" alt="Portland’s least secret Secret Roller Disco. Thursday nights, rain or shine, 7 to 9.">
+        <ul class="list-inline">
+          <li><a href="https://www.instagram.com/secretrollerdisco/" target="_blank"><img src="images/social/instagram.png" class="social" alt="instagram logo"></a></li>
+          <li><a href="https://www.tiktok.com/@secretrollerdisco" target="_blank"><img src="images/social/tiktok.png" class="social" alt="tiktok logo"></a></li>
+          <li><a href="https://www.facebook.com/groups/356245775488560" target="_blank"><img src="images/social/facebook.png" class="social" alt="facebook logo"></a></li>
+        </ul>
 
-        <a href="https://www.paypal.com/donate/?hosted_button_id=6BV9EQF6CVS6C" target="_blank">
-          <img src="images/paypal.jpeg" class="img-responsive paypal" alt="PayPal Donation Button">
-          <p class="subtext">Tax-deductable with PayPal, credit, or debit</p>
-        </a>
+        <div class="section">
+          <img src="images/by-line.png" class="img-responsive" alt="Portland’s least secret Secret Roller Disco. Thursday nights, rain or shine, 7 to 9.">
+        </div>
 
-        <a href="https://bikeportland.org/2022/07/26/its-roller-palooza-at-secret-roller-disco-360290" target="_blank">
-          <img src="images/bike-portland.jpg" class="img-responsive" alt="Screenshot of an article on the Bike Portland website about Secret Roller Disco">
-          <p class="subtext">Click here for the whole story!</p>
-        </a>
+        <div class="section">
+          <a href="https://www.paypal.com/donate/?hosted_button_id=6BV9EQF6CVS6C" target="_blank">
+            <img src="images/paypal.jpeg" class="img-responsive" alt="PayPal Donation Button">
+            <p>Tax-deductable with PayPal, credit, or debit</p>
+          </a>
+        </div>
 
-        <a href="https://www.wweek.com/culture/2021/07/21/buckmans-secret-roller-disco-isnt-so-secret-anymorebut-its-still-an-awesome-party/" target="_blank">
-          <img src="images/willamette-week.png" class="img-responsive" alt="Screenshot of an article on the Willamette Week website with the following text: Buckman's Secret Roller Disco Isn't So Secret Anymore — but It's Still an Awesome Party. The by-line is: That's when we were like, 'OK, we've turned into an unofficial Burning Man.'">
-          <p class="subtext">Click here for the whole story!</p>
-        </a>
+        <div class="section">
+          <a href="https://bikeportland.org/2022/07/26/its-roller-palooza-at-secret-roller-disco-360290" target="_blank">
+            <img src="images/bike-portland.jpg" class="img-responsive" alt="Screenshot of an article on the Bike Portland website about Secret Roller Disco">
+            <p>Click here for the whole story!</p>
+          </a>
+        </div>
 
-        <a href="https://fhspost.com/the-revival-of-the-roller-disco/" target="_blank">
-          <img src="images/franklin-post.png" class="img-responsive" alt="Screenshot of an article on the Franklin Post website with the following text: The Revival of the Roller Disco, by Pearl Mcnames posted on October 5, 2021. A picture of two roller skaters in cow print clothing.">
-          <p class="subtext">Click here for the whole story!</p>
-        </a>
+        <div class="section">
+          <a href="https://www.wweek.com/culture/2021/07/21/buckmans-secret-roller-disco-isnt-so-secret-anymorebut-its-still-an-awesome-party/" target="_blank">
+            <img src="images/willamette-week.png" class="img-responsive" alt="Screenshot of an article on the Willamette Week website with the following text: Buckman's Secret Roller Disco Isn't So Secret Anymore — but It's Still an Awesome Party. The by-line is: That's when we were like, 'OK, we've turned into an unofficial Burning Man.'">
+            <p>Click here for the whole story!</p>
+          </a>
+        </div>
 
-        <img src="images/eye-logo.png" class="img-responsive lips-logo" alt="Secret Roller Disco logo with an eye ball in inside a disco ball inside a triangle.">
+        <div class="section">
+          <a href="https://fhspost.com/the-revival-of-the-roller-disco/" target="_blank">
+            <img src="images/franklin-post.png" class="img-responsive" alt="Screenshot of an article on the Franklin Post website with the following text: The Revival of the Roller Disco, by Pearl Mcnames posted on October 5, 2021. A picture of two roller skaters in cow print clothing.">
+            <p>Click here for the whole story!</p>
+          </a>
+        </div>
 
-        <a href="https://www.umbrellapdx.org" target="_blank">
-          <img src="images/umbrella.jpg" class="img-responsive lips-logo" alt="Umbrella 501(c)(3) logo">
-        </a>
+        <div class="section">
+          <img src="images/eye-logo.png" class="img-responsive" alt="Secret Roller Disco logo with an eye ball in inside a disco ball inside a triangle.">
+        </div>
+
+        <div class="section">
+          <a href="https://www.umbrellapdx.org" target="_blank">
+            <img src="images/umbrella.jpg" class="img-responsive" alt="Umbrella 501(c)(3) logo">
+          </a>
+        </div>
       </div>
     </div>
 
     <p class="footer">
-      <a href="https://instagram.com/secretrollerdisco" target="_blank">@secretrollerdisco</a> | Established 2020 | <a href="/archive">Archive</a>
+      Established 2020 | <a href="/archive">Archive</a>
     </p>
   </div>
 </body>
