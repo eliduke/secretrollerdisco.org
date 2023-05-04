@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- HTML Meta Tags -->
+  <title>Secret Roller Disco{{ page.title }}</title>
+  <meta name="description" content="Portland’s least secret Secret Roller Disco. Thursday nights, rain or shine, 7 to 9. All wheels welcome!">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="{{ site.url }}{{ page.url | split: '.' | first }}">
+  <meta property="og:type" content="{% if page.url == '/' %}website{% else %}article{% endif %}">
+  <meta property="og:title" content="{{ site.title }}{{ page.title }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ site.url }}/images/meta-{{ site.posts.first.date | date: '%F' }}.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="secretrollerdisco.org">
+  <meta property="twitter:url" content="{{ site.url }}{{ page.url | split: '.' | first }}">
+  <meta name="twitter:title" content="{{ site.title }}{{ page.title }}">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:image" content="{{ site.url }}/images/meta-{{ site.posts.first.date | date: '%F' }}.png">
+  
+  <!-- FAVICON STUFF-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/images/favicon/site.webmanifest">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/app.css?v={{ site.time | date: '%s' }}">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <p class="nav">
+          <a href="/">Secret Roller Disco</a>
+          <span>
+            <a href="/press">Press</a> •
+            <a href="archive">Archive</a>
+          </span>
+        </p>
+      </div>
+    </div>
+    
+    {{ content }}
+    
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <p class="nav">
+          Established 2020
+          <span>
+            <a href="/press">Press</a> • 
+            <a href="archive">Archive</a>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

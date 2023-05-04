@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    {% assign post = site.posts.first %}
+    {% assign slug = post.id | split: '/' | last %}
+    {% assign location = site.data.locations[slug] %}
+
+    <img
+      class="img-responsive"
+      src="images/flyers/flyer-{{post.date | date: '%F'}}.png"
+      alt="
+        Flyer for Secret Roller Disco:
+        {{post.date | date: '%A, %B %-d, %Y'}}, {{post.time}}. {{location['name']}}.
+        {{post.alt}} All wheels welcome. {{location['address']}}.
+        {% if post.rentals == true %}Skate Rentals!{% else %}No Skate Rentals.{% endif %}
+      "
+    \>
+
+    <div class="info">
+      <h3>{{post.date | date: "%B %-d, %Y"}}</h3>
+      <p><a href="http://maps.google.com/?q={{location['name']}}+{{location['address']}}" target="_blank">{{location['name']}}</a></p>
+      <p>Featuring: <a href="{{post.dj_link}}" target="_blank">{{post.dj_name}}</a></p>
+      <p>Theme: {{post.theme}}</p>
+    </div>
+
+    <div class="social section">
+      <ul class="list-inline">
+        <li>
+          <a href="https://www.instagram.com/secretrollerdisco/" target="_blank">
+            <img src="images/social/instagram.png" class="social" alt="instagram logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@secretrollerdisco" target="_blank">
+            <img src="images/social/tiktok.png" class="social" alt="tiktok logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/groups/356245775488560" target="_blank">
+            <img src="images/social/facebook.png" class="social" alt="facebook logo">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <img src="images/by-line.png" class="img-responsive" alt="Portland’s least secret Secret Roller Disco. Thursday nights, rain or shine, 7 to 9.">
+    </div>
+
+    <div class="section">
+      <img src="images/logo-pef.png" class="img-responsive" alt="Portland Events &amp; Film Logo">
+      <p>Portland Events and Film is proud to support events that celebrate our city, build community, and represent the diversity of Portland’s creative talent, businesses, and communities.</p>
+    </div>
+
+    <div class="section">
+      <img src="images/logo-eye.png" class="img-responsive" alt="Secret Roller Disco logo with an eye ball in inside a disco ball inside a triangle.">
+    </div>
+  </div>
+</div>

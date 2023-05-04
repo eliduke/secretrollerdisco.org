@@ -1,0 +1,10 @@
+---
+layout: default
+title: " Flyer Archive"
+---
+
+<div class="flex-container">
+  {% for post in site.posts offset:1 %}
+    <img class="flex-flyer" src="images/flyers/flyer-{{post.date | date: '%F'}}.png">
+  {% endfor %}
+</div>
