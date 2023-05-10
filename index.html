@@ -13,8 +13,8 @@ layout: default
       src="images/flyers/flyer-{{post.date | date: '%F'}}.png"
       alt="
         Flyer for Secret Roller Disco:
-        {{post.date | date: '%A, %B %-d, %Y'}}, {{post.time}}. {{location['name']}}.
-        {{post.alt}} All wheels welcome. {{location['address']}}.
+        {{post.date | date: '%A, %B %-d, %Y'}}, {{post.time}}.
+        {{location['name']}}. {{post.alt}}. {{location['address']}}. All wheels welcome.
         {% if post.rentals == true %}Skate Rentals!{% else %}No Skate Rentals.{% endif %}
       "
     \>
