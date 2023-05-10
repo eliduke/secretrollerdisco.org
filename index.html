@@ -21,7 +21,13 @@ layout: default
 
     <div class="info">
       <h3>{{post.date | date: "%B %-d, %Y"}}</h3>
-      <p><a href="http://maps.google.com/?q={{location['name']}}+{{location['address']}}" target="_blank">{{location['name']}}</a></p>
+      
+      {% if location['name'] contains 'Secret' %}
+        <p>{{location['name']}}<br/><a href="tel:{{location['address']}}" target="_blank">{{location['address']}}</a></p>
+      {% else %}
+        <p><a href="http://maps.google.com/?q={{location['name']}}+{{location['address']}}" target="_blank">{{location['address']}}</a></p>
+      {% endif %}
+      
       <p>Featuring: <a href="{{post.dj_link}}" target="_blank">{{post.dj_name}}</a></p>
       <p>Theme: {{post.theme}}</p>
     </div>
