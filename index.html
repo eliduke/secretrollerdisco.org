@@ -14,7 +14,7 @@ layout: default
       alt="
         Flyer for Secret Roller Disco:
         {{post.date | date: '%A, %B %-d, %Y'}}, {{post.time}}.
-        {{location['name']}}. {{post.alt}}. {{location['address']}}. All wheels welcome.
+        {{location['name']}}. {{post.alt}} {{location['address']}}. All wheels welcome.
         {% if post.rentals == true %}Skate Rentals!{% else %}No Skate Rentals.{% endif %}
       "
     \>
@@ -22,11 +22,13 @@ layout: default
     <div class="info">
       <h3>{{post.date | date: "%B %-d, %Y"}}</h3>
 
-      {% if location['name'] contains 'Secret' %}
-        <p>{{location['name']}}<br/><a href="tel:{{location['address']}}" target="_blank">{{location['address']}}</a></p>
-      {% else %}
-        <p>{{location['name']}}<br/><a href="http://maps.google.com/?q={{location['name']}}+{{location['address']}}" target="_blank">{{location['address']}}</a></p>
-      {% endif %}
+      <p>{{location['name']}}<br/>
+        {% if location['name'] contains 'Secret' %}
+          <a href="tel:{{location['address']}}" target="_blank">{{location['address']}}</a>
+        {% else %}
+          <a href="http://maps.google.com/?q={{location['name']}}+{{location['address']}}" target="_blank">{{location['address']}}</a>
+        {% endif %}
+      </p>
 
       <p>Featuring: <a href="{{post.dj_link}}" target="_blank">{{post.dj_name}}</a></p>
       <p>Theme: {{post.theme}}</p>
