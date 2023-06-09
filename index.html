@@ -32,6 +32,10 @@ layout: default
 
       <p>Featuring: <a href="{{post.dj_link}}" target="_blank">{{post.dj_name}}</a></p>
       <p>Theme: {{post.theme}}</p>
+
+      {% if post.rentals == true %}
+      <p>SKATE RENTALS!!</p>
+      {% endif %}
     </div>
 
     <div class="social section">
