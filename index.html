@@ -26,7 +26,7 @@ layout: default
         {% if location['name'] contains 'Secret' %}
           <a href="tel:{{location['address']}}" target="_blank">{{location['address']}}</a>
         {% else %}
-          <a href="http://maps.google.com/?q={{location['name']}}+{{location['address']}}" target="_blank">{{location['address']}}</a>
+          <a href="http://maps.google.com/?q={{location['address']}}" target="_blank">{{location['address']}}</a>
         {% endif %}
       </p>
 
