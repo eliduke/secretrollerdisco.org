@@ -22,10 +22,17 @@ a:hover {
 
 .info {
   h3 { margin: 20px 0 10px 0 }
+
   p {
     font-weight: bold;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 20px;
+  }
+
+  .rentals {
+    background: -webkit-linear-gradient(45deg, #FFFF66, #FF66FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 
@@ -39,7 +46,7 @@ p.nav {
   padding: 5px 10px;
   margin: 0 3px 20px 3px;
   border: 1px dashed #ccc;
-  
+
   span { float: right }
 }
 
