@@ -19,7 +19,7 @@ layout: default
       "
     \>
 
-    <div class="info">
+    <div class="info section">
       <h3>{{post.date | date: "%B %-d, %Y"}}</h3>
 
       <p>{{location['name']}}<br/>
@@ -37,6 +37,16 @@ layout: default
         <p>🥳 <span class='rentals'>SKATE RENTALS</span> 🥳</p>
       {% else %}
         <p>☹️ NO SKATE RENTALS ☹️</p>
+      {% endif %}
+    </div>
+
+    <div class="section">
+      {% if post.map == true %}
+        <img
+          class="img-responsive"
+          src="images/flyers/location-{{slug}}.png"
+          alt="Location Map This Week: {{location['name']}}. {{location['address']}}."
+        \>
       {% endif %}
     </div>
 
