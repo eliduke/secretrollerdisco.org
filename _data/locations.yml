@@ -31,6 +31,9 @@ king:
 lloyd-center:
   name: Marshalls at Lloyd Center
   address: 1405 Lloyd Center
+lloyd-center-skating-rink:
+  name: Lloyd Center Skating Rink
+  address: 953 Lloyd Center
 loring-and-lewis:
   name: Loring & Lewis Lot
   address: 2126 N Lewis Ave
