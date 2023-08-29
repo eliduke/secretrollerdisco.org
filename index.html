@@ -25,6 +25,8 @@ layout: default
       <p>{{location['name']}}<br/>
         {% if location['name'] contains 'Secret' %}
           <a href="tel:{{location['address']}}" target="_blank">{{location['address']}}</a>
+        {% elsif location['name'] contains 'GONE' %}
+          {{location['address']}}
         {% else %}
           <a href="http://maps.google.com/?q={{location['address']}}" target="_blank">{{location['address']}}</a>
         {% endif %}
@@ -40,7 +42,7 @@ layout: default
 
       {% if post.rentals == true %}
         <p>🥳 <span class='rentals'>SKATE RENTALS</span> 🥳</p>
-      {% else %}
+      {% elsif post.rentals == false %}
         <p>☹️ NO SKATE RENTALS ☹️</p>
       {% endif %}
     </div>
