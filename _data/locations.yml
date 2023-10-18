@@ -16,6 +16,9 @@ bridlemile:
 buckman:
   name: Buckman Elementary School
   address: 320 SE 16th Ave
+convention-center:
+  name: Convention Center Plaza
+  address: 834 NE Martin Luther King Jr Blvd
 faubion:
   name: Faubion Elementary School
   address: 2930 NE Dekum St
