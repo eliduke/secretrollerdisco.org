@@ -20,7 +20,10 @@ layout: default
     \>
 
     <div class="info section">
-      <h3>{{post.date | date: "%B %-d, %Y"}}</h3>
+      <h3>
+        {{post.date | date: "%A"}}<br/>
+        {{post.date | date: "%B %-d, %Y"}}
+      </h3>
 
       <p>{{location['name']}}<br/>
         {% if location['name'] contains 'Secret' %}
@@ -33,7 +36,13 @@ layout: default
       </p>
 
       {% if post.dj_name %}
-        <p>Featuring: <a href="{{post.dj_link}}" target="_blank">{{post.dj_name}}</a></p>
+        <p>Featuring:
+          {% if post.dj_link %}
+            <a href="{{post.dj_link}}" target="_blank">{{post.dj_name}}</a>
+          {% else %}
+            {{post.dj_name}}
+          {% endif %}
+        </p>
       {% endif %}
 
       {% if post.theme %}

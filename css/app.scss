@@ -21,10 +21,13 @@ a:hover {
 }
 
 .info {
-  h3 { margin: 20px 0 10px 0 }
+  h3 {
+    font-weight: bold;
+    margin: 20px 0 10px 0
+  }
 
   p {
-    font-weight: bold;
+    font-weight: 500;
     margin-top: 10px;
     font-size: 20px;
   }
