@@ -10,7 +10,7 @@ layout: default
 
     <img
       class="img-responsive"
-      src="images/flyers/flyer-{{post.date | date: '%F'}}.png"
+      src="images/flyers/flyer-{{post.date | date: '%F'}}.png?v={{ site.time | date: '%s' }}"
       alt="
         Flyer for Secret Roller Disco:
         {{post.date | date: '%A, %B %-d, %Y'}}, {{post.time}}.

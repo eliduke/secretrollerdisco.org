@@ -17,9 +17,9 @@
   <meta property="og:description" content="{{ site.description }}">
   <meta property="og:image" content="
     {% if page.image %}
-      {{ site.url }}{{ page.image }}
+      {{ site.url }}{{ page.image }}?v={{ site.time | date: '%s' }}
     {% else %}
-      {{ site.url }}/images/flyers/meta-{{ site.posts.first.date | date: '%F' }}.png
+      {{ site.url }}/images/flyers/meta-{{ site.posts.first.date | date: '%F' }}.png?v={{ site.time | date: '%s' }}
     {% endif %}
   ">
 
@@ -31,9 +31,9 @@
   <meta name="twitter:description" content="{{ site.description }}">
   <meta name="twitter:image" content="
     {% if page.image %}
-      {{ site.url }}{{ page.image }}
+      {{ site.url }}{{ page.image }}?v={{ site.time | date: '%s' }}
     {% else %}
-      {{ site.url }}/images/flyers/meta-{{ site.posts.first.date | date: '%F' }}.png
+      {{ site.url }}/images/flyers/meta-{{ site.posts.first.date | date: '%F' }}.png?v={{ site.time | date: '%s' }}
     {% endif %}
   ">
 
