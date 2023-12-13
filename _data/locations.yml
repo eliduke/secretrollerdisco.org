@@ -1,72 +1,94 @@
 abernethy:
   name: Abernethy Elementary School
   address: 2421 SE Orange Ave
+  city: Portland, OR
 astor:
   name: Astor Elementary School
   address: 5601 N Yale St
+  city: Portland, OR
 boise-eliot:
   name: Boise-Eliot Elementary School
-  address: 620 N FREMONT ST
+  address: 620 N Fremont St
+  city: Portland, OR
 bond-ave:
   name: Bond Ave
   address: S Bond Ave and S Meade St
+  city: Portland, OR
 bridlemile:
   name: Bridlemile Elementary School
   address: 4300 SW 47th Dr
+  city: Portland, OR
 buckman:
   name: Buckman Elementary School
   address: 320 SE 16th Ave
+  city: Portland, OR
 convention-center:
   name: Convention Center Plaza
   address: 834 NE Martin Luther King Jr Blvd
+  city: Portland, OR
 faubion:
   name: Faubion Elementary School
   address: 2930 NE Dekum St
+  city: Portland, OR
 gone:
   name: GONE FISHIN'
   address: ☹️ NO DISCO THIS WEEK ☹️
 irvington:
   name: Irvington Elementary School
   address: 1320 NE Brazee St
+  city: Portland, OR
 jaja:
   name: JAJA PDX
   address: 819 SE Taylor St
+  city: Portland, OR
 king:
   name: King Elementary School
   address: 4906 NE 6th Ave
+  city: Portland, OR
 lloyd-center:
   name: Marshalls at Lloyd Center
   address: 1405 Lloyd Center
+  city: Portland, OR
 lloyd-center-skating-rink:
   name: Lloyd Center Skating Rink
   address: 953 Lloyd Center
+  city: Portland, OR
 loring-and-lewis:
   name: Loring & Lewis Lot
   address: 2126 N Lewis Ave
+  city: Portland, OR
 mcdaniel:
   name: McDaniel High School
   address: 2735 NE 82nd Ave
+  city: Portland, OR
 nw-waterfront:
   name: Northwest Waterfront
   address: 1830 NW Riverscape St
+  city: Portland, OR
 parkrose:
   name: Parkrose Middle School
   address: 11800 NE Shaver St
+  city: Portland, OR
 pier-park:
   name: Pier Park Tennis Courts
   address: 9700 N Pier Park Pl
+  city: Portland, OR
 rigler:
   name: Rigler Elementary School
   address: 5401 NE Prescott St
+  city: Portland, OR
 russell:
   name: Russell Elementary School
   address: 2700 NE 127th Ave
+  city: Portland, OR
 secret:
   name: Call for the Secret Location
   address: 1-833-SRDISCO
 shaver:
   name: Shaver Elementary School
   address: 3701 NE 131st Pl
+  city: Portland, OR
 the-redd:
   name: The Redd East Parking Lot
   address: 831 SE Salmon St
+  city: Portland, OR
