@@ -25,13 +25,16 @@ layout: default
         {{post.date | date: "%B %-d, %Y"}}
       </h3>
 
-      <p>{{location['name']}}<br/>
+      <p>
+        {{location['name']}}<br/>
         {% if location['name'] contains 'Secret' %}
           <a href="tel:{{location['address']}}" target="_blank">{{location['address']}}</a>
         {% elsif location['name'] contains 'GONE' %}
           {{location['address']}}
         {% else %}
           {{location['address']}}<br/>
+          {{location['city']}}</p>
+          <p>
           <a href="http://maps.apple.com/?q={{location['address']}}+{{location['city']}}" target="_blank">Apple Maps</a> •
           <a href="http://maps.google.com/?q={{location['address']}}+{{location['city']}}" target="_blank">Google Maps</a>
         {% endif %}
@@ -58,15 +61,15 @@ layout: default
       {% endif %}
     </div>
 
-    <div class="section">
-      {% if post.map == true %}
+    {% if post.map == true %}
+      <div class="section">
         <img
           class="img-responsive"
           src="images/flyers/location-{{slug}}.png"
           alt="Location Map This Week: {{location['name']}}. {{location['address']}}."
         \>
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
 
     <div class="social section">
       <ul class="list-inline">
