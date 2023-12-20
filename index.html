@@ -40,7 +40,7 @@ layout: default
       </p>
 
       {% if post.dj_name %}
-        <p>Featuring:
+        <p><strong>Featuring</strong>:
           {% if post.dj_link %}
             <a href="{{post.dj_link}}" target="_blank">{{post.dj_name}}</a>
           {% else %}
@@ -49,14 +49,18 @@ layout: default
         </p>
       {% endif %}
 
+      {% if post.alt %}
+        <p class='alt'>{{post.alt}}</p>
+      {% endif %}
+
       {% if post.theme %}
-        <p>Theme: {{post.theme}}</p>
+        <p><strong>Theme</strong>: {{post.theme}}</p>
       {% endif %}
 
       {% if post.rentals == true %}
         <p>🥳 <span class='rentals'>SKATE RENTALS</span> 🥳</p>
       {% elsif post.rentals == false %}
-        <p>☹️ NO SKATE RENTALS ☹️</p>
+        <p><strong>☹️ NO SKATE RENTALS ☹️</strong></p>
       {% endif %}
     </div>
 
