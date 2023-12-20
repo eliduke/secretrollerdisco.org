@@ -39,6 +39,10 @@ layout: default
         {% endif %}
       </p>
 
+      {% if post.alt %}
+        <p class='alt'>{{post.alt}}</p>
+      {% endif %}
+
       {% if post.dj_name %}
         <p><strong>Featuring</strong>:
           {% if post.dj_link %}
@@ -47,10 +51,6 @@ layout: default
             {{post.dj_name}}
           {% endif %}
         </p>
-      {% endif %}
-
-      {% if post.alt %}
-        <p class='alt'>{{post.alt}}</p>
       {% endif %}
 
       {% if post.theme %}
