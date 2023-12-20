@@ -1,7 +1,7 @@
 ---
 layout: default
 time: Starts at 7pm
-rentals: true
+rentals: false
 theme: Mobile Holiday Disco
 dj_name: Doogie Nights
 dj_link: https://www.instagram.com/doogienights
