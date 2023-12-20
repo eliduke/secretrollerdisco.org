@@ -81,6 +81,10 @@ russell:
   name: Russell Elementary School
   address: 2700 NE 127th Ave
   city: Portland, OR
+salmon-street-springs:
+  name: Salmon Street Springs
+  address: 1000 SW Naito Pkwy
+  city: Portland, OR
 secret:
   name: Call for the Secret Location
   address: 1-833-SRDISCO
