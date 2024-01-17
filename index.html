@@ -43,15 +43,17 @@ layout: default
         <p class='alt'>{{post.alt}}</p>
       {% endif %}
 
-      {% if post.dj_name %}
-        <p><strong>Featuring</strong>:
-          {% if post.dj_link %}
-            <a href="{{post.dj_link}}" target="_blank">{{post.dj_name}}</a>
-          {% else %}
-            {{post.dj_name}}
+      <p><strong>Featuring</strong>:
+        {% for dj in post.djs %}
+          {% if dj.name %}
+            {% if dj.link %}
+              <a href="{{dj.link}}" target="_blank">{{dj.name}}</a>
+            {% else %}
+              {{dj.name}}
+            {% endif %}
           {% endif %}
-        </p>
-      {% endif %}
+        {% endfor %}
+      </p>
 
       {% if post.theme %}
         <p><strong>Theme</strong>: {{post.theme}}</p>
