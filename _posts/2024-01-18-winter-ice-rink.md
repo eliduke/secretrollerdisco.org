@@ -1,14 +1,12 @@
 ---
 layout: default
 time: 7 to 9pm
-rentals: true
-theme: Goth Grandpa
+rentals: false
+theme: ⚠️ POSTPONED ⚠️
 djs:
-  - name: GothxGrandpa
-    link: https://www.instagram.com/gothxgrandpa
-  - name: PopCartPDX
-    link: https://www.instagram.com/popcartpdx
+  - name: POSTPONED
+    link:
 
-alt: This is a super special ice skating edition of Secret Roller Disco being held at the Portland Winter Ice Rink! There will be $15 ice skate rentals available.
+alt: ‼️ POSTPONED. UPDATES SOON. ‼️
 map:
 ---
