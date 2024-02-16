@@ -44,17 +44,17 @@ layout: default
       {% endif %}
 
       {% if post.djs %}
-      <p><strong>Featuring</strong>:
-        {% for dj in post.djs %}
-          {% if dj.name %}
-            {% if dj.link %}
-              <a href="{{dj.link}}" target="_blank">{{dj.name}}</a>
-            {% else %}
-              {{dj.name}}
+        <p><strong>Featuring</strong>:
+          {% for dj in post.djs %}
+            {% if dj.name %}
+              {% if dj.link %}
+                <a href="{{dj.link}}" target="_blank">{{dj.name}}</a>
+              {% else %}
+                {{dj.name}}
+              {% endif %}
             {% endif %}
-          {% endif %}
-        {% endfor %}
-      </p>
+          {% endfor %}
+        </p>
       {% endif %}
 
       {% if post.theme %}
@@ -112,7 +112,7 @@ layout: default
     </div>
 
     <div class="section">
-      <img src="images/logo-racc.png" class="img-responsive" alt="Regional Arts &amp; Culture Council">
+      <img src="images/logo-racc.png" class="img-responsive" alt="Regional Arts &amp; Culture Council Logo">
       <p>These events made possible by public arts funding from Regional Arts &amp; Culture Council (RACC) who envision a community that supports, participates, and finds joy in arts and culture, not just for those who can afford to pay.</p>
     </div>
 

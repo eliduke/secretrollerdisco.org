@@ -1,0 +1,18 @@
+---
+layout: default
+title: " Flyer Archive / All"
+image: /images/meta-archive.jpg
+permalink: /archive/all
+---
+
+<div class="archive flex-container">
+  {% for post in site.posts %}
+    <img class="flex-flyer" src="/images/flyers/flyer-{{post.date | date: '%F'}}.png">
+  {% endfor %}
+
+  <p>
+    These are all of the official flyers going back to when this website was created in February of 2022.<br/>
+    The disco had been going for nearly two years at that point!<br />
+    Time is weird.
+  </p>
+</div>

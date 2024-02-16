@@ -1,11 +1,13 @@
 ---
 layout: default
-title: " Flyer Archive"
+title: " Flyer Archive / Recent"
 image: /images/meta-archive.jpg
 ---
 
-<div class="flex-container">
-  {% for post in site.posts offset:1 %}
-    <img class="flex-flyer" src="images/flyers/flyer-{{post.date | date: '%F'}}.png">
+<div class="archive flex-container">
+  {% for post in site.posts limit: 8 %}
+    <img class="flex-flyer" src="/images/flyers/flyer-{{post.date | date: '%F'}}.png">
   {% endfor %}
+
+  <h3>These are just the most recent flyers, <a href="/archive/all">click here to see them all</a>.</h3>
 </div>
