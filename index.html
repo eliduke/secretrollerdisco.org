@@ -44,7 +44,7 @@ layout: default
       {% endif %}
 
       {% if post.djs %}
-        <p><strong>Featuring</strong>:
+        <p><strong>Featuring</strong>:<br/>
           {% for dj in post.djs %}
             {% if dj.name %}
               {% if dj.link %}
@@ -52,13 +52,14 @@ layout: default
               {% else %}
                 {{dj.name}}
               {% endif %}
+              <br/>
             {% endif %}
           {% endfor %}
         </p>
       {% endif %}
 
       {% if post.theme %}
-        <p><strong>Theme</strong>: {{post.theme}}</p>
+        <p><strong>Theme</strong>:<br/>{{post.theme}}</p>
       {% endif %}
 
       {% if post.rentals == true %}
