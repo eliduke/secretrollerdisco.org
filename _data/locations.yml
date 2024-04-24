@@ -100,6 +100,10 @@ the-redd:
   name: The Redd East Parking Lot
   address: 831 SE Salmon St
   city: Portland, OR
+urbanite:
+  name: URBANITE PDX
+  address: 1520 NW 20th Ave
+  city: Portland, OR
 winter-ice-rink:
   name: Portland Winter Ice Rink
   address: 499 SW Naito Pkwy
