@@ -1,7 +1,7 @@
 ---
 layout: default
 time: 7 to 9pm
-rentals: true
+rentals: false
 theme: Lisa Frank
 djs:
   - name: DJ Purple Rain
