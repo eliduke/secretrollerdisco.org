@@ -26,6 +26,10 @@ convention-center:
   name: Convention Center Plaza
   address: 834 NE Martin Luther King Jr Blvd
   city: Portland, OR
+eastbank-esplanade:
+  name: Eastbank Esplanade
+  address: 40 SE Main St
+  city: Portland, OR
 faubion:
   name: Faubion Elementary School
   address: 2930 NE Dekum St
