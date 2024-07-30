@@ -9,5 +9,3 @@ djs:
 alt:
 map:
 ---
-
-beehivewifi
