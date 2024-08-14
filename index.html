@@ -43,6 +43,10 @@ layout: default
         <p class='alt'>{{post.alt}}</p>
       {% endif %}
 
+      {% if post.theme %}
+        <p><strong>Theme</strong><br/>{{post.theme}}</p>
+      {% endif %}
+
       {% if post.djs %}
         <p><strong>Featuring</strong><br/>
           {% for dj in post.djs %}
@@ -56,10 +60,6 @@ layout: default
             {% endif %}
           {% endfor %}
         </p>
-      {% endif %}
-
-      {% if post.theme %}
-        <p><strong>Theme</strong><br/>{{post.theme}}</p>
       {% endif %}
 
       {% if post.rentals == true %}
