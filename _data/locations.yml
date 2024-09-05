@@ -22,6 +22,10 @@ buckman:
   name: Buckman Elementary School
   address: 320 SE 16th Ave
   city: Portland, OR
+cascade-equinox:
+  name: Cascade Equinox Festival
+  address: 3800 SW Airport Wy
+  city: Redmond, OR
 convention-center:
   name: Convention Center Plaza
   address: 834 NE Martin Luther King Jr Blvd
