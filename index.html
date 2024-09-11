@@ -8,13 +8,13 @@ layout: default
     {% assign slug = post.id | split: '/' | last %}
     {% assign location = site.data.locations[slug] %}
 
-    <img
+    <!-- <img
       class="img-responsive"
       src="images/fall-schedule.png"
       alt="Secret Roller Disco autumn schedule"
-    \>
+    \> -->
 
-    <!-- <img
+    <img
       class="img-responsive"
       src="images/flyers/flyer-{{post.date | date: '%F'}}.png?v={{ site.time | date: '%s' }}"
       alt="
@@ -23,7 +23,7 @@ layout: default
         {{location['name']}}. {{post.alt}} {{location['address']}}. All wheels welcome.
         {% if post.rentals == true %}Skate Rentals!{% else %}No Skate Rentals.{% endif %}
       "
-    \> -->
+    \>
 
     <div class="info section">
       <h3>
