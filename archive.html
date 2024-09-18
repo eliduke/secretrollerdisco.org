@@ -7,8 +7,6 @@ image: /images/meta-archive.jpg
 <div class="archive flex-container">
   {% for post in site.posts limit: 8 %}
     {% assign slug = post.id | split: '/' | last %}
-    {% assign location = site.data.locations[slug] %}
-
     {% unless slug == 'none' %}
       <img class="flex-flyer" src="/images/flyers/flyer-{{post.date | date: '%F'}}.png">
     {% endunless %}
