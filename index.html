@@ -4,15 +4,10 @@ layout: default
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
+    <!--
     {% assign post = site.posts.first %}
     {% assign slug = post.id | split: '/' | last %}
     {% assign location = site.data.locations[slug] %}
-
-    <!-- <img
-      class="img-responsive"
-      src="images/fall-schedule.png"
-      alt="Secret Roller Disco autumn schedule"
-    \> -->
 
     <img
       class="img-responsive"
@@ -74,6 +69,53 @@ layout: default
         <p><strong>☹️ NO SKATE RENTALS ☹️</strong></p>
       {% endif %}
     </div>
+    -->
+
+    <img
+      class="img-responsive"
+      src="images/flyers/flyer-2024-09-20.png?v={{ site.time | date: '%s' }}"
+      alt="
+        Flyer for Secret Roller Disco: Cascade Equinox Festival
+        September 20-22, 2-4pm Family, 4-10pm Open
+        Deschutes County Fair & Expo Center
+        3800 SW Airport Wy, Redmond, OR 97756
+        Skate Rentals will be available!
+      "
+    \>
+
+    <div class="info section">
+      <h3>
+        September 20-22, 2024
+      </h3>
+
+      <p>
+        <a href="https://cascadeequinox.com" target="_blank">Cascade Equinox Festival</a><br/>
+        Deschutes County Fair & Expo Center<br/>
+        3800 SW Airport Wy<br/>
+        Redmond, OR 97756
+      </p>
+
+      <p>
+        <a href="http://maps.apple.com/?q=3800+SW+Airport+Wy,+Redmond,+OR+97756" target="_blank">Apple Maps</a> •
+        <a href="http://maps.google.com/?q=3800+SW+Airport+Wy,+Redmond,+OR+97756" target="_blank">Google Maps</a>
+      </p>
+
+      <p>
+        <strong>Theme</strong><br/>SOLAR SPIN
+      </p>
+
+      <p>
+        <strong>Featuring</strong><br/>
+        <a href="https://www.instagram.com/tabordance" target="_blank">
+          TABOR DANCE
+        </a>
+      </p>
+
+      <p>
+        🥳 <span class='rentals'>SKATE RENTALS</span> 🥳<br/>
+        Provided by <a href="https://crushnevadacity.com" target="_blank">Crush Nevada City</a>
+      </p>
+    </div>
 
     {% if post.map == true %}
       <div class="section">
@@ -103,6 +145,10 @@ layout: default
           </a>
         </li>
       </ul>
+    </div>
+
+    <div class="section">
+      <img src="images/fall-schedule.png" class="img-responsive" alt="Secret Roller Disco Fall Schedule">
     </div>
 
     <div class="section">

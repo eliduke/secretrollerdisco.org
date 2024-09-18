@@ -73,6 +73,8 @@ memory-den:
   name: Memory Den Vintage Mall
   address: 499 SE 2nd Ave
   city: Portland, OR
+none:
+  name: NO ROLLER DISCO THIS WEEK
 nw-waterfront:
   name: Northwest Waterfront
   address: 1830 NW Riverscape St
