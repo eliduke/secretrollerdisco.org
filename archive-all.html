@@ -7,7 +7,10 @@ permalink: /archive/all
 
 <div class="archive flex-container">
   {% for post in site.posts %}
-    <img class="flex-flyer" src="/images/flyers/flyer-{{post.date | date: '%F'}}.png">
+    {% assign slug = post.id | split: '/' | last %}
+    {% unless slug == 'none' %}
+      <img class="flex-flyer" src="/images/flyers/flyer-{{post.date | date: '%F'}}.png">
+    {% endunless %}
   {% endfor %}
 
   <div class="row">
