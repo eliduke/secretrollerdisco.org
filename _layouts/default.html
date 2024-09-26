@@ -19,7 +19,12 @@
     {% if page.image %}
       {{ site.url }}{{ page.image }}?v={{ site.time | date: '%s' }}
     {% else %}
-      {{ site.url }}/images/flyers/meta-{{ site.posts.first.date | date: '%F' }}.png?v={{ site.time | date: '%s' }}
+      {% assign slug = site.posts.first.id | split: '/' | last %}
+      {% if slug == 'none' %}
+        {{ site.url }}/images/flyers/meta-no-disco.png?v={{ site.time | date: '%s' }}
+      {% else %}
+        {{ site.url }}/images/flyers/meta-{{ site.posts.first.date | date: '%F' }}.png?v={{ site.time | date: '%s' }}
+      {% endif %}
     {% endif %}
   ">
 
@@ -33,7 +38,12 @@
     {% if page.image %}
       {{ site.url }}{{ page.image }}?v={{ site.time | date: '%s' }}
     {% else %}
-      {{ site.url }}/images/flyers/meta-{{ site.posts.first.date | date: '%F' }}.png?v={{ site.time | date: '%s' }}
+      {% assign slug = site.posts.first.id | split: '/' | last %}
+      {% if slug == 'none' %}
+        {{ site.url }}/images/flyers/meta-no-disco.png?v={{ site.time | date: '%s' }}
+      {% else %}
+        {{ site.url }}/images/flyers/meta-{{ site.posts.first.date | date: '%F' }}.png?v={{ site.time | date: '%s' }}
+      {% endif %}
     {% endif %}
   ">
 
