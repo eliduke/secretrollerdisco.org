@@ -6,11 +6,8 @@ permalink: /archive/all
 ---
 
 <div class="archive flex-container">
-  {% for post in site.posts %}
-    {% assign slug = post.id | split: '/' | last %}
-    {% unless slug == 'none' %}
-      <img class="flex-flyer" src="/images/flyers/flyer-{{post.date | date: '%F'}}.png">
-    {% endunless %}
+  {% for post in site.posts offset: 1 %}
+    <img class="flex-flyer" src="/images/flyers/flyer-{{post.date | date: '%F'}}.png">
   {% endfor %}
 
   <div class="row">
