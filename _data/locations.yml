@@ -45,6 +45,10 @@ irvington:
   name: Irvington Elementary School
   address: 1320 NE Brazee St
   city: Portland, OR
+inkbus:
+  name: INKBUS Mothership
+  address: 3308 SE 50th Ave
+  city: Portland, OR
 jaja:
   name: JAJA PDX
   address: 819 SE Taylor St
