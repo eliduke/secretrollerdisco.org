@@ -110,6 +110,10 @@ shaver:
   name: Shaver Elementary School
   address: 3701 NE 131st Pl
   city: Portland, OR
+smartpark:
+  name: Naito & Davis SmartPark (4th Level)
+  address: 33 NW Davis St
+  city: Portland, OR, 97209
 the-redd:
   name: The Redd East Parking Lot
   address: 831 SE Salmon St
