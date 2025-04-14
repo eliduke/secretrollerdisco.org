@@ -6,6 +6,6 @@ theme: Funeral
 djs:
   - name: Goth Grandpa
     link: https://www.instagram.com/gothxgrandpa/
-alt:
+alt: Secret Roller Disco is Dead! <br/> Long live Secret Roller Disco!
 map:
 ---
