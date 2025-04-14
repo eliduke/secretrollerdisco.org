@@ -6,7 +6,7 @@ permalink: /archive/all
 ---
 
 <div class="archive flex-container">
-  {% for post in site.posts offset: 1 %}
+  {% for post in site.posts %}
     <img class="flex-flyer" src="/images/flyers/flyer-{{post.date | date: '%F'}}.png">
   {% endfor %}
 
