@@ -5,7 +5,7 @@ image: /images/meta-archive.jpg
 ---
 
 <div class="archive flex-container">
-  {% for post in site.posts limit: 8 offset: 1 %}
+  {% for post in site.posts limit: 10 offset: 1 %}
     <img class="flex-flyer" src="/images/flyers/flyer-{{post.date | date: '%F'}}.png">
   {% endfor %}
 
