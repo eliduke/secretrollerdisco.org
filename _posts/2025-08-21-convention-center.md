@@ -5,7 +5,7 @@ rentals: true
 theme: Purple Rain
 djs:
   - name: DJ Purple Rain
-    link: https://www.instagram.com/dj_purple_rain
+    link: https://www.instagram.com/rainvanhecke_purplerain/
 alt:
 map:
 ---
