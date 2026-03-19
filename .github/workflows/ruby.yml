@@ -3,7 +3,7 @@ name: Check for NONE
 on:
   workflow_dispatch:
   schedule:
-    - cron: 0 9 * * THU
+    - cron: 0 17 * * THU
 
 permissions:
   contents: write
