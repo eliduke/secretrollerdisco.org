@@ -1,4 +1,4 @@
-name: Check for NONE
+name: Auto Update for NONE
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 jobs:
-  check-for-none:
+  auto-update-for-none:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -20,12 +20,12 @@ jobs:
       uses: ruby/setup-ruby@v1.295.0
       with:
         bundler-cache: true
-    - name: Check for NONE
+    - name: Auto-updating for NONE disco
       run: bundle exec ruby rb/check_for_none.rb
     - name: Commit changes
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        commit_message: Auto-adjusting NONE disco
+        commit_message: Auto-updating for a repeated 'NONE' disco
   jekyll:
-    needs: check-for-none
+    needs: auto-update-for-none
     uses: ./.github/workflows/jekyll.yml
