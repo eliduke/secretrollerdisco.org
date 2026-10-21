@@ -39,7 +39,7 @@ layout: default
         {{location['name']}}<br/>
         {% if location['name'] contains 'Secret' %}
           <a href="tel:{{location['address']}}" target="_blank">{{location['address']}}</a>
-        {% elsif slug == 'gone' %}
+        {% elsif slug == 'secret' %}
           {{location['address']}}
         {% elsif slug == 'none' %}
           {{location['address']}}
